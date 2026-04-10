@@ -1,0 +1,31 @@
+.btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #34a853;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2e8e4a;
+    transform: translateY(-1px);
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 13px 20px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.brand-name {
+    font-size: 1.6rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1a73e8;
+}
+
+.nav-auth {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-signin {
+    padding: 8px 20px;
+    border: 1px solid #1a73e8;
+    color: #1a73e8;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #f0f7ff;
+}
+
+.btn-signup {
+    padding: 8px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-signup:hover {
+    background-color: #1557b0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 4%;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide links on mobile for simplicity */
+    }
+
+    .nav-brand {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .btn-signin,
+    .btn-signup {
+        padding: 7px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem 5%;
+    }
+}

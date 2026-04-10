@@ -4,8 +4,11 @@ import Select from '../UI/Select';
 import Button from '../UI/Button';
 import { saveToLocalStorage } from '../../utils/authUtils';
 import './Auth.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+    const navigate =  useNavigate()
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -30,7 +33,8 @@ const Login = () => {
         });
 
         alert('Login successful! (Demo)');
-        // In real app → navigate to dashboard
+        navigate('/')
+        
     };
 
     return (

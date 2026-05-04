@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { getFromLocalStorage, removeFromLocalStorage } from '../../Utils/authUtils';
-import './Navbar.css';
+import './NavBar.css';
+import { getFromLocalStorage, removeFromLocalStorage } from '../../util/authUtils';
 
 const Navbar = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -50,7 +50,7 @@ const Navbar = () => {
           <Link to="/categories" className="nav-link">
             <span className="icon">📂</span> Categories
           </Link>
-          
+
           {currentUser && (
             <>
               <Link to="/saved" className="nav-link">

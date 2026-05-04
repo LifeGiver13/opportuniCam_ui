@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Input from '../UI/Input';
 import Select from '../UI/Select';
 import Button from '../UI/Button';
-import { saveToLocalStorage } from '../../utils/authUtils';
 import './Auth.css';
 import { useNavigate } from 'react-router-dom';
+import { saveToLocalStorage } from '../../util/authUtils';
 
 const Login = () => {
 
-    const navigate =  useNavigate()
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -34,7 +34,7 @@ const Login = () => {
 
         alert('Login successful! (Demo)');
         navigate('/')
-        
+
     };
 
     return (
